@@ -36,9 +36,3 @@ struct FCLottieView: UIViewRepresentable {
 
 
 
-//ZStack {
-//    FCLottieView(nameLottieJsonFile: "linkVehicleError.json", loopMode: .loop)
-//        .padding(.top, 24)
-//        .frame(minWidth: 328, minHeight: 235)
-//}
-//.padding(.horizontal, 24)

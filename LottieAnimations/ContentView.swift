@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LottieView.swift
 //  LottieAnimations
 //
 //  Created by Mohit Tomer on 26/12/23.
@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LottieView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        ZStack {
+            FCLottieView(nameLottieJsonFile: "linkVehicleError.json", loopMode: .loop)
+                .padding(.top, 24)
+                .frame(minWidth: 328, minHeight: 235)
         }
-        .padding()
+        .padding(.horizontal, 24)
     }
 }
 
 #Preview {
-    ContentView()
+    LottieView()
 }
